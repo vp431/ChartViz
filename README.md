@@ -382,28 +382,6 @@ Use attention visualizations to:
 
 ---
 
-## 📞 Support
 
-If you encounter issues:
-1. Check the [Troubleshooting](#-troubleshooting) section
-2. Review error messages in the console
-3. Open an issue on GitHub with:
-   - Error message and stack trace
-   - System information (GPU, Python version)
-   - Steps to reproduce
 
----
-
-## 🗺️ Roadmap
-
-- [ ] Support for more models (GPT-4V, Claude Vision, etc.)
-- [ ] Batch processing for multiple charts
-- [ ] Export analysis reports (PDF, HTML)
-- [ ] Fine-tuning interface for custom datasets
-- [ ] API endpoint for programmatic access
-- [ ] Docker containerization
-- [ ] Cloud deployment guides
-
----
-
-**Made with ❤️ for the AI and Visualization community** at IIT Delhi **
+**Made with ❤️ for the AI and Visualization community at IIT Delhi**
