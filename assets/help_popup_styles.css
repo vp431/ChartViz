@@ -1,0 +1,365 @@
+/* Help Popup Professional Styling */
+/* Clean, formal, and professional design */
+
+:root {
+    --help-primary-color: #007bff;
+    --help-secondary-color: #6c757d;
+    --help-success-color: #28a745;
+    --help-danger-color: #dc3545;
+    --help-warning-color: #ffc107;
+    --help-info-color: #17a2b8;
+    --help-light-color: #f8f9fa;
+    --help-dark-color: #343a40;
+    --help-body-bg: #ffffff;
+    --help-body-color: #212529;
+    --help-border-radius: 8px;
+    --help-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --help-transition: all 0.2s ease-in-out;
+}
+
+/* Help Modal Container - Wider and more professional */
+#help-modal .modal-dialog {
+    max-width: 900px !important;
+    width: 90% !important;
+    margin: 1rem auto;
+}
+
+#help-modal .modal-content {
+    border-radius: var(--help-border-radius);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background-color: var(--help-body-bg);
+}
+
+/* Help Modal Header */
+#help-modal .modal-header {
+    background-color: var(--help-light-color);
+    border-bottom: 1px solid #dee2e6;
+    border-radius: var(--help-border-radius) var(--help-border-radius) 0 0;
+    padding: 1.5rem 2rem;
+}
+
+#help-modal .modal-header h4 {
+    color: var(--help-dark-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* Help Modal Body */
+#help-modal .modal-body {
+    padding: 2rem;
+    background-color: var(--help-body-bg);
+    min-height: 500px;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+/* Help Tabs Styling */
+#help-modal .nav-tabs {
+    border-bottom: 2px solid #dee2e6;
+    margin-bottom: 1.5rem;
+}
+
+#help-modal .nav-tabs .nav-link {
+    border-radius: var(--help-border-radius) var(--help-border-radius) 0 0;
+    border: 1px solid transparent;
+    color: var(--help-body-color);
+    font-weight: 500;
+    transition: var(--help-transition);
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+}
+
+#help-modal .nav-tabs .nav-link:hover {
+    border-color: #e9ecef #e9ecef #dee2e6;
+    color: var(--help-primary-color);
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+#help-modal .nav-tabs .nav-link.active {
+    background-color: var(--help-body-bg);
+    border-color: #dee2e6 #dee2e6 var(--help-body-bg);
+    color: var(--help-primary-color);
+    font-weight: 600;
+}
+
+/* Tab Content Styling */
+#help-modal .tab-content {
+    padding: 0;
+}
+
+/* Help Section Headers */
+#help-modal h5 {
+    color: var(--help-dark-color);
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 0.5rem;
+}
+
+#help-modal h6 {
+    color: var(--help-primary-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Help Content Styling */
+#help-modal .help-content {
+    line-height: 1.6;
+    color: var(--help-body-color);
+}
+
+#help-modal .help-content p {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+#help-modal .help-content ul,
+#help-modal .help-content ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+#help-modal .help-content li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* Professional Cards for Help Sections */
+#help-modal .help-card {
+    background: var(--help-light-color);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: var(--help-border-radius);
+    padding: 1.25rem;
+    margin: 1rem 0;
+    transition: var(--help-transition);
+}
+
+#help-modal .help-card:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--help-box-shadow);
+}
+
+#help-modal .help-card h6 {
+    color: var(--help-primary-color);
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+}
+
+#help-modal .help-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+/* Professional Buttons in Help */
+#help-modal .btn {
+    border-radius: var(--help-border-radius);
+    font-weight: 500;
+    transition: var(--help-transition);
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+#help-modal .btn-primary {
+    background-color: var(--help-primary-color);
+    border-color: var(--help-primary-color);
+}
+
+#help-modal .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#help-modal .btn-light {
+    background-color: var(--help-light-color);
+    border-color: #dee2e6;
+    color: var(--help-dark-color);
+}
+
+#help-modal .btn-light:hover {
+    background-color: #e9ecef;
+    border-color: #adb5bd;
+}
+
+/* Model and Dataset Info Cards */
+#help-modal .info-card {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: var(--help-border-radius);
+    padding: 1rem;
+    margin: 0.75rem 0;
+    transition: var(--help-transition);
+}
+
+#help-modal .info-card:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--help-box-shadow);
+}
+
+#help-modal .info-card .card-title {
+    color: var(--help-primary-color);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#help-modal .info-card .card-text {
+    font-size: 0.9rem;
+    color: var(--help-body-color);
+    line-height: 1.5;
+}
+
+/* Horizontal Rules */
+#help-modal hr {
+    border: 0;
+    border-top: 1px solid #dee2e6;
+    margin: 1.5rem 0;
+}
+
+/* Code and Technical Text */
+#help-modal code {
+    background-color: var(--help-light-color);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: var(--help-danger-color);
+}
+
+/* Help Modal Footer */
+#help-modal .modal-footer {
+    background-color: var(--help-light-color);
+    border-top: 1px solid #dee2e6;
+    border-radius: 0 0 var(--help-border-radius) var(--help-border-radius);
+    padding: 1rem 2rem;
+}
+
+/* Responsive Design for Help Modal */
+@media (max-width: 768px) {
+    #help-modal .modal-dialog {
+        width: 95% !important;
+        margin: 0.5rem auto;
+    }
+
+    #help-modal .modal-header,
+    #help-modal .modal-body,
+    #help-modal .modal-footer {
+        padding: 1rem;
+    }
+
+    #help-modal .modal-body {
+        max-height: 60vh;
+    }
+
+    #help-modal .nav-tabs .nav-link {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    #help-modal h5 {
+        font-size: 1.1rem;
+    }
+
+    #help-modal h6 {
+        font-size: 1rem;
+    }
+}
+
+/* Professional Scrollbar for Help Modal */
+#help-modal .modal-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+#help-modal .modal-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+#help-modal .modal-body::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+#help-modal .modal-body::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Loading States */
+#help-modal .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    color: var(--help-secondary-color);
+    text-align: center;
+}
+
+#help-modal .loading-spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid #e5e7eb;
+    border-top: 3px solid var(--help-primary-color);
+    border-radius: 50%;
+    animation: helpSpin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes helpSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Icon Styling */
+#help-modal .fas,
+#help-modal .far,
+#help-modal .fab {
+    margin-right: 0.5rem;
+    opacity: 0.8;
+}
+
+/* Professional Alert Styling */
+#help-modal .alert {
+    border-radius: var(--help-border-radius);
+    border: 1px solid;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+#help-modal .alert-success {
+    border-color: #d1e7dd;
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+#help-modal .alert-info {
+    border-color: #b6effb;
+    background-color: #b6effb;
+    color: #055160;
+}
+
+/* Professional Badge Styling */
+#help-modal .badge {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.65rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Collapse/Accordion Styling */
+#help-modal .collapse-toggle {
+    cursor: pointer;
+    transition: var(--help-transition);
+}
+
+#help-modal .collapse-toggle:hover {
+    color: var(--help-primary-color);
+}
+

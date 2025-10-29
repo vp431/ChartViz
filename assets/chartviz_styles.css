@@ -1,0 +1,734 @@
+/* ChartViz - Chart QA Explainability Tool - Professional Styling */
+/* Matching OldCode clean, professional business theme */
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --body-bg: #ffffff;
+    --body-color: #212529;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.2s ease-in-out;
+}
+
+/* Main container with clean professional design */
+.main-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body-bg);
+}
+
+/* Professional container spacing */
+.container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Clean body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--body-bg);
+    color: var(--body-color);
+    line-height: 1.6;
+    overflow-x: visible;
+}
+
+/* ChartViz container styling */
+.chartviz-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: 1rem 0;
+    overflow-x: hidden;
+}
+
+/* Professional title styling */
+.chartviz-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--dark-color);
+}
+
+.chartviz-subtitle {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin: 0;
+    margin-top: 0.25rem;
+    color: var(--secondary-color);
+}
+
+/* Clean control panel styling - matching OldCode exactly */
+.control-panel, .control-panel-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    height: auto;
+    min-height: 80px;
+    overflow: visible;
+    z-index: 100;
+    position: relative;
+}
+
+/* Control panel body styling */
+.control-panel-card .card-body {
+    padding: 0.75rem !important;
+}
+
+/* Control panel row width fixes */
+.control-panel-card .row {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.control-panel-card .col-1,
+.control-panel-card .col-2,
+.control-panel-card .col-3,
+.control-panel-card .col-5 {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+}
+
+.control-label {
+    font-size: 0.85rem;
+    color: var(--dark-color);
+    margin-bottom: 4px;
+    font-weight: 600;
+    display: block;
+}
+
+.control-section {
+    margin-bottom: 1rem;
+}
+
+.control-section:last-child {
+    margin-bottom: 0;
+}
+
+/* Professional dropdown styling */
+.Select-control {
+    border-radius: var(--border-radius) !important;
+    border: 1px solid #ced4da !important;
+    box-shadow: none !important;
+    min-height: 32px !important;
+    transition: var(--transition) !important;
+}
+
+.Select-control:hover {
+    border-color: var(--primary-color) !important;
+}
+
+.Select-control.is-focused {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+}
+
+/* Clean card styling */
+.card {
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    height: 100%;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--box-shadow);
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.card-body {
+    padding: 1rem;
+    background: white;
+}
+
+/* Professional button styling */
+.btn {
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: var(--transition);
+    font-size: 0.875rem;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+}
+
+/* Chart container styling */
+.chart-container {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: var(--box-shadow);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    transition: var(--transition);
+}
+
+.chart-container:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.chart-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin: 0;
+}
+
+.chart-controls {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+/* Professional form elements */
+textarea, input[type="text"], input[type="email"], input[type="password"] {
+    border: 1px solid #ced4da;
+    border-radius: var(--border-radius);
+    padding: 0.75rem;
+    transition: var(--transition);
+    font-size: 0.875rem;
+}
+
+textarea:focus, input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Model info cards */
+.model-info-card {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: var(--border-radius);
+    padding: 1.25rem;
+    margin: 1rem 0;
+    transition: var(--transition);
+}
+
+.model-info-card:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--box-shadow);
+}
+
+.model-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.model-details {
+    font-size: 0.875rem;
+    color: var(--body-color);
+    line-height: 1.5;
+}
+
+/* Statistics panels */
+.stats-panel {
+    background: var(--light-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.stat-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: block;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: var(--body-color);
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+
+/* Professional loading states */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.loading-spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid #e5e7eb;
+    border-top: 3px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Professional alert styling */
+.alert, .alert-chartviz {
+    border-radius: var(--border-radius);
+    border: 1px solid;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+.alert-success {
+    border-color: #d1e7dd;
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.alert-danger, .alert-error {
+    border-color: #f5c2c7;
+    background-color: #f5c2c7;
+    color: #842029;
+}
+
+.alert-warning {
+    border-color: #ffecb5;
+    background-color: #ffecb5;
+    color: #664d03;
+}
+
+.alert-info {
+    border-color: #b6effb;
+    background-color: #b6effb;
+    color: #055160;
+}
+
+/* Professional modal styling */
+.modal-content {
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background-color: var(--light-color);
+    border-bottom: 1px solid #dee2e6;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    padding: 1rem 1.5rem;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.modal-footer {
+    background-color: var(--light-color);
+    border-top: 1px solid #dee2e6;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    padding: 1rem 1.5rem;
+}
+
+/* Professional upload area */
+.upload-area {
+    border: 2px dashed var(--secondary-color);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+    background: var(--light-color);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.upload-area:hover {
+    border-color: var(--primary-color);
+    background: #e3f2fd;
+}
+
+.upload-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.upload-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.upload-subtext {
+    font-size: 0.875rem;
+    color: var(--secondary-color);
+    margin-top: 0.5rem;
+}
+
+/* Analysis area styling */
+.analysis-modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding: 2rem;
+}
+
+.analysis-results-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.analysis-chart-container {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.analysis-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Attention visualization specific */
+.attention-overlay {
+    position: relative;
+    display: inline-block;
+}
+
+.attention-heatmap {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.token-importance-bar {
+    background: linear-gradient(90deg, var(--primary-color), var(--info-color));
+    border-radius: 4px;
+    margin: 2px 0;
+    transition: var(--transition);
+}
+
+.token-importance-bar:hover {
+    transform: scaleY(1.05);
+}
+
+/* Selected model display styling - matching OldCode */
+.selected-model-display {
+    padding: 0.3rem 0.5rem;
+    background-color: var(--light-color);
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+    min-height: 1.8rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    word-break: break-word;
+    max-width: 100%;
+}
+
+/* Radio button styling - matching OldCode */
+.form-check-input {
+    margin-right: 0.5rem;
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Professional tab styling */
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.nav-tabs .nav-link {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    border: 1px solid transparent;
+    color: var(--body-color);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: #e9ecef #e9ecef #dee2e6;
+    color: var(--primary-color);
+}
+
+.nav-tabs .nav-link.active {
+    background-color: white;
+    border-color: #dee2e6 #dee2e6 white;
+    color: var(--primary-color);
+}
+
+/* Custom scrollbar - minimal styling */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .chartviz-title {
+        font-size: 1.5rem;
+    }
+    
+    .control-panel {
+        padding: 1rem;
+    }
+    
+    .chart-container {
+        padding: 1rem;
+    }
+    
+    .chart-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    
+    .chart-controls {
+        justify-content: center;
+    }
+    
+    .container-fluid {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .analysis-results-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Professional utility classes */
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.shadow {
+    box-shadow: var(--box-shadow);
+}
+
+/* Focus states for accessibility */
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Disabled state styling */
+.btn:disabled,
+.form-control:disabled,
+.form-select:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Plotly customizations */
+.js-plotly-plot .plotly .main-svg {
+    border-radius: var(--border-radius);
+}
+
+/* Professional spacing */
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.p-3 {
+    padding: 1rem !important;
+}
+
+/* Ensure proper width handling */
+.w-100 {
+    width: 100% !important;
+}
+
+/* Better spacing for labels - matching OldCode */
+.fw-bold {
+    font-weight: 600 !important;
+}
+
+/* Make all containers allow dropdown overflow */
+.container-fluid,
+.row,
+.col,
+.card,
+.card-body {
+    overflow: visible !important;
+}
+
+/* Dropdown menu enhancements - Fix duplicate visual elements */
+.dash-dropdown {
+    position: relative !important;
+    z-index: 1000 !important;
+}
+
+.dash-dropdown .Select-menu-outer {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 999999 !important;
+    background: white !important;
+    border: 1px solid #ced4da !important;
+    border-top: none !important;
+    border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Fix for duplicate horizontal strips/lines in dropdowns */
+.dash-dropdown .Select-menu-outer::before,
+.dash-dropdown .Select-menu-outer::after {
+    display: none !important;
+}
+
+.dash-dropdown .Select-menu {
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+.dash-dropdown .Select-option {
+    border-bottom: none !important;
+    border-top: none !important;
+    background: white !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.dash-dropdown .Select-option:hover,
+.dash-dropdown .Select-option.is-focused {
+    background: #f8f9fa !important;
+    border: none !important;
+}
+
+.dash-dropdown .Select-option.is-selected {
+    background: var(--primary-color) !important;
+    color: white !important;
+    border: none !important;
+}
+
+/* Remove any duplicate borders or lines */
+.dash-dropdown .Select-menu-outer > div {
+    border: none !important;
+}
+
+.dash-dropdown .Select-menu-outer > div > div {
+    border: none !important;
+}
+
+/* Control panel specific dropdown fixes */
+.control-panel-card .Select-control {
+    min-height: 32px;
+}
+
+/* Ensure radio buttons in control panel are properly aligned */
+.control-panel-card .form-check {
+    padding-left: 1.25rem;
+    margin-bottom: 0;
+}
+
+.control-panel-card .form-check-input {
+    margin-top: 0.125rem;
+}

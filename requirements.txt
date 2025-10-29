@@ -1,0 +1,57 @@
+# Core web framework
+dash
+dash-bootstrap-components
+plotly
+
+# Deep learning and transformers
+torch
+torchvision
+transformers
+accelerate
+
+# Qwen2.5-VL specific dependencies
+qwen_vl_utils
+
+# Computer vision and image processing
+opencv-python
+Pillow
+scikit-image
+
+# Data processing
+numpy
+pandas
+datasets
+
+# Machine learning utilities
+scikit-learn
+matplotlib
+seaborn
+
+# Attention visualization
+bertviz
+captum
+
+# Progress and utilities
+tqdm
+rich
+
+# Configuration and logging
+pydantic
+loguru
+
+# Image annotation and overlay
+matplotlib-scalebar
+mplcursors
+
+# Optional: For advanced attention analysis
+gradient-free-optimizers
+grad-cam
+
+# Development and testing (optional)
+pytest
+black
+flake8
+mypy
+
+# Memory optimization
+psutil

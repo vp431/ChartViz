@@ -1,0 +1,233 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Models (large files)
+LocalModels/
+models/*.bin
+models/*.safetensors
+models/*.pt
+models/*.pth
+*.ckpt
+*.model
+
+# Datasets (large files)
+LocalDatasets/
+datasets/
+data/
+*.csv
+*.json
+*.parquet
+
+# Cache directories
+cache/
+.cache/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Transformers cache
+.transformers_cache/
+transformers_cache/
+
+# Hugging Face cache
+.huggingface/
+huggingface/
+
+# Logs
+*.log
+logs/
+*.out
+*.err
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.*.swp
+.*.swo
+
+# Test files
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+*.sublime-project
+*.sublime-workspace
+
+# Documentation builds
+docs/_build/
+site/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Fonts (if downloaded)
+fonts/*.ttf
+fonts/*.TTF
+fonts/*.otf
+
+# Assets (if large)
+assets/models/
+assets/datasets/
+
+# Evaluation results
+results/
+outputs/
+experiments/
+checkpoints/
+
+# Temporary Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Backup files
+*.backup
+*_backup.*
